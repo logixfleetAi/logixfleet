@@ -16,7 +16,7 @@ const Footer = () => {
               />
             </Link>
             <p className="footer-description">
-              Fleet management. Smarter routes. Seamless delivery management for businesses.
+              Built for sustainable fleets 🌱
             </p>
             <div className="footer-social">
               <a

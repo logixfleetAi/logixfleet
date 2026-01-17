@@ -16,9 +16,9 @@ const Home = () => {
       <section className="hero hero-centered">
         <div className="hero-inner">
           <div className="hero-content">
-            <h1 className="hero-title">Complete control of your fleet and deliveries.</h1>
+            <h1 className="hero-title">End-to-end fleet management, compliance tracking, route optimization, and payment reconciliation in one platform.</h1>
             <p className="hero-subtitle">
-              Compliance tracking, route optimization, and payment reconciliation in one platform.
+              Track your fleet's emissions. Prove sustainability to your customers.
             </p>
             <div className="hero-actions">
               <Link to="/book-a-demo" className="btn btn-primary">Book a Demo</Link>
