@@ -1,10 +1,17 @@
 import { Link } from 'react-router-dom';
 import CTASection from '../components/CTASection';
+import SEO from '../components/SEO';
 import './FleetSolution.css';
 
 const FleetSolution = () => {
   return (
     <main>
+      <SEO
+        title="Fleet Management Software"
+        description="Professional fleet management software with compliance tracking, AI fuel monitoring, approval workflows, and WhatsApp integration. Stay audit-ready and control costs."
+        keywords="fleet management software, compliance tracking, fuel monitoring, vehicle maintenance, approval workflows, WhatsApp fleet management, Kenya fleet software"
+        canonical="/fleet-solution"
+      />
       {/* Hero */}
       <section className="fleet-hero">
         <div className="hero-inner">

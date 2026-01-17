@@ -1,10 +1,17 @@
 import { Link } from 'react-router-dom';
 import CTASection from '../components/CTASection';
+import SEO from '../components/SEO';
 import './SolutionPages.css';
 
 const DeliverySolution = () => {
   return (
     <main>
+      <SEO
+        title="Delivery Management Software"
+        description="Optimize delivery routes, track drivers in real-time, and capture proof of delivery automatically. Reduce costs and deliver more with less effort."
+        keywords="delivery management software, route optimization, GPS tracking, proof of delivery, dispatch software, last mile delivery, Kenya delivery software"
+        canonical="/delivery-solution"
+      />
       {/* Hero */}
       <section className="solution-hero">
         <div className="hero-inner">

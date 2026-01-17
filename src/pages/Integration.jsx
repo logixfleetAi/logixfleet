@@ -1,9 +1,16 @@
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 import './Integration.css';
 
 const Integration = () => {
   return (
     <main className="page-content">
+      <SEO
+        title="Integrations"
+        description="Connect LogixFleet with your existing ERP, e-commerce, and accounting systems. Seamless integration with ERPNext, Odoo, SAP, Shopify, WooCommerce, QuickBooks, Xero, and Zoho."
+        keywords="fleet software integration, ERP integration, Shopify integration, WooCommerce integration, QuickBooks integration, Xero integration, API integration"
+        canonical="/integration"
+      />
       <section className="integrations-section">
         <div className="container">
           <div className="section-header">

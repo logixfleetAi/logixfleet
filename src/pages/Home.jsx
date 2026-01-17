@@ -1,10 +1,17 @@
 import { Link } from 'react-router-dom';
 import CTASection from '../components/CTASection';
+import SEO from '../components/SEO';
 import './Home.css';
 
 const Home = () => {
   return (
     <main>
+      <SEO
+        title="Fleet & Delivery Management Software for Africa"
+        description="Complete fleet management and delivery software for African businesses. Track vehicles, optimize routes, manage compliance, and reconcile payments. Built for East Africa."
+        keywords="fleet management, delivery management, route optimization, vehicle tracking, GPS tracking, fleet software, logistics software, Kenya, East Africa, Nairobi"
+        canonical="/"
+      />
       {/* HERO */}
       <section className="hero hero-centered">
         <div className="hero-inner">
