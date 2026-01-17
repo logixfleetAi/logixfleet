@@ -2,6 +2,20 @@
   publish = "dist"
   command = "npm run build"
 
+# Redirect logixfleet.com to logixfleet.ai
+[[redirects]]
+  from = "https://logixfleet.com/*"
+  to = "https://logixfleet.ai/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.logixfleet.com/*"
+  to = "https://logixfleet.ai/:splat"
+  status = 301
+  force = true
+
+# Handle client-side routing
 [[redirects]]
   from = "/*"
   to = "/index.html"
