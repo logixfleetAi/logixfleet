@@ -22,7 +22,7 @@ const CTASection = ({
             <span className="divider">|</span>
             <a href="https://wa.me/254711612980" target="_blank" rel="noopener noreferrer">WhatsApp</a>
             <span className="divider">|</span>
-            <a href="mailto:sales@logixfleet.com">sales@logixfleet.com</a>
+            <a href="mailto:sales@logixfleet.ai">sales@logixfleet.ai</a>
           </div>
         )}
       </div>
