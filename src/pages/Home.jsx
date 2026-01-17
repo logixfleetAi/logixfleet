@@ -109,7 +109,7 @@ const Home = () => {
             <h3>Ready to get started?</h3>
             <p>
               Contact our sales team for a custom quote tailored to your fleet size and requirements.
-              No commitment, no pressure—just honest answers about how LogixFleet can help your business.
+              No commitment, no pressure just honest answers about how LogixFleet can help your business.
             </p>
             <div className="pricing-bundle-actions">
               <Link to="/book-a-demo" className="btn">Book a Demo</Link>
