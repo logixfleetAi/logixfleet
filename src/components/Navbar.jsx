@@ -46,8 +46,10 @@ const Navbar = () => {
             alt="LogixFleet"
             className="nav-logo-img"
           />
-        </Link>
 
+          <div className="sustainability-icon">🌱</div>
+        </Link>
+        
         <button
           className={`nav-mobile-toggle ${mobileMenuOpen ? 'active' : ''}`}
           onClick={toggleMobileMenu}
