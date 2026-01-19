@@ -21,7 +21,7 @@
 }
 
 .footer-logo {
-    display: inline-block;
+    display: flex;
     margin-bottom: 1rem;
 }
 
@@ -36,6 +36,15 @@
     color: var(--ink-light);
     line-height: 1.7;
     margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.sustainability-icon {
+    font-size: 24px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .footer-social {
@@ -178,6 +187,7 @@
 
     .footer-description {
         max-width: 400px;
+        justify-content: center;
     }
 
     .footer-social {

@@ -14,9 +14,10 @@ const Footer = () => {
                 alt="LogixFleet"
                 className="footer-logo-img"
               />
+              🌱
             </Link>
             <p className="footer-description">
-              Built for sustainable fleets 🌱
+              Built for sustainable fleets
             </p>
             <div className="footer-social">
               <a
