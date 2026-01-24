@@ -9,3 +9,9 @@
   status = 301
   force = true
   conditions = {Host = ["logixfleet.com", "www.logixfleet.com"]}
+
+# SPA fallback - handle all routes for React Router
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
