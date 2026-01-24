@@ -120,7 +120,7 @@ const Home = () => {
             </p>
             <div className="pricing-bundle-actions">
               <Link to="/book-a-demo" className="btn">Book a Demo</Link>
-              <a href="#contact" className="btn btn-outline">Contact Sales</a>
+              <Link to="/#contact" className="btn btn-outline">Contact Sales</Link>
             </div>
           </div>
 

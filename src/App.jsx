@@ -7,15 +7,15 @@ import BookDemo from './pages/BookDemo';
 import DeliverySolution from './pages/DeliverySolution';
 import FleetSolution from './pages/FleetSolution';
 import Integration from './pages/Integration';
+import PitchDeck from './pages/PitchDeck';
 import './styles/global.css';
 
-// Scroll to top on route change
+// Scroll to section or top on route/hash change
 function ScrollToTop() {
-  const { pathname, hash } = useLocation();
+  const location = useLocation();
 
   useEffect(() => {
-    if (hash) {
-      // If there's a hash, scroll to that element
+    const scrollToElement = (hash) => {
       const element = document.querySelector(hash);
       if (element) {
         const navHeight = 72;
@@ -24,12 +24,52 @@ function ScrollToTop() {
           top: elementPosition - navHeight - 20,
           behavior: 'smooth'
         });
+        return true;
       }
+      return false;
+    };
+
+    if (location.hash) {
+      // Small delay to ensure DOM is ready after navigation
+      setTimeout(() => {
+        scrollToElement(location.hash);
+      }, 100);
     } else {
-      // Otherwise scroll to top
       window.scrollTo(0, 0);
     }
-  }, [pathname, hash]);
+  }, [location]);
+
+  // Handle hash link clicks on the same page
+  useEffect(() => {
+    const handleHashClick = (e) => {
+      const target = e.target.closest('a');
+      if (!target) return;
+
+      const href = target.getAttribute('href');
+      const to = target.getAttribute('to') || href;
+
+      if (to && to.includes('#')) {
+        const hash = to.includes('#') ? '#' + to.split('#')[1] : null;
+        if (hash) {
+          const element = document.querySelector(hash);
+          if (element) {
+            e.preventDefault();
+            const navHeight = 72;
+            const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+            window.scrollTo({
+              top: elementPosition - navHeight - 20,
+              behavior: 'smooth'
+            });
+            // Update URL without triggering navigation
+            window.history.pushState(null, '', to);
+          }
+        }
+      }
+    };
+
+    document.addEventListener('click', handleHashClick);
+    return () => document.removeEventListener('click', handleHashClick);
+  }, []);
 
   return null;
 }
@@ -45,6 +85,7 @@ function App() {
         <Route path="/delivery-solution" element={<DeliverySolution />} />
         <Route path="/fleet-solution" element={<FleetSolution />} />
         <Route path="/integration" element={<Integration />} />
+        <Route path="/pitch-deck" element={<PitchDeck />} />
       </Routes>
       <Footer />
     </>
