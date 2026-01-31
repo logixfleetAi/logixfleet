@@ -1,9 +1,16 @@
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import CTASection from '../components/CTASection';
 import SEO from '../components/SEO';
 import './Home.css';
 
 const Home = () => {
+  const [expandedCard, setExpandedCard] = useState(null);
+
+  const toggleCard = (cardId) => {
+    setExpandedCard(expandedCard === cardId ? null : cardId);
+  };
+
   return (
     <main>
       <SEO
@@ -16,13 +23,171 @@ const Home = () => {
       <section className="hero hero-centered">
         <div className="hero-inner">
           <div className="hero-content">
-            <h1 className="hero-title">Manage your fleet with us</h1>
+            <h1 className="hero-title">SIPHYY is a Fleet Control OS.</h1>
             <p className="hero-subtitle">
-              End-to-end fleet management, compliance tracking, route optimization, payment reconciliation, along with tracking your carbon emissions.
-            </p>
+It helps fleet and logistics operators prevent avoidable downtime, stop cost leakage, and keep every vehicle compliant and accountable using alerts, evidence, and audit trails that make issues impossible to ignore.            </p>
             <div className="hero-actions">
               <Link to="/book-a-demo" className="btn btn-primary">Book a Demo</Link>
               <Link to="/#pricing" className="btn btn-secondary">Get a Quote</Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* HOW WE DO IT - USE CASES */}
+      <section className="section">
+        <div className="container">
+          <div className="section-header">
+            <div className="section-label">How We Do It</div>
+            <h2 className="section-title">Four controls that stop money leaks</h2>
+            <p className="section-subtitle">
+              Fleet operations fail when problems stay hidden. SIPHYY makes losses visible early through automated alerts and control systems so nothing slips through.
+            </p>
+          </div>
+
+          <div className="controls-grid">
+            <div className="control-card">
+              <span className="control-num">01</span>
+              <h3>Proactive issue detection</h3>
+              <p>Vehicle problems whisper before they scream. SIPHYY captures driver reports via WhatsApp, creates work orders, and sends repeating alerts until issues are fixed. Problems can't disappear in chat threads.</p>
+
+              <button
+                className="control-learn-more"
+                onClick={() => toggleCard(1)}
+                aria-expanded={expandedCard === 1}
+              >
+                {expandedCard === 1 ? 'Show less' : 'Learn more'}
+                <svg className={`chevron ${expandedCard === 1 ? 'rotated' : ''}`} width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M4 6L8 10L12 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </button>
+
+              <div className={`control-expanded ${expandedCard === 1 ? 'open' : ''}`}>
+                <div className="control-detail">
+                  <strong>The Problem</strong>
+                  <p>Drivers report issues verbally or via WhatsApp. Managers promise to fix them. Weeks pass. The issue gets worse. No one remembers who reported what or when. The breakdown happens, costing thousands in downtime and towing.</p>
+                </div>
+                <div className="control-detail">
+                  <strong>The Leak</strong>
+                  <p>Small problems (low tire pressure, strange noise, check engine light) become expensive failures. Reactive maintenance costs 3-5x more than preventive. Lost revenue from unplanned downtime exceeds repair costs.</p>
+                </div>
+                <div className="control-detail">
+                  <strong>How SIPHYY Stops It</strong>
+                  <p>Driver submits issue via WhatsApp → System creates a work order with timestamp + photo evidence → Manager receives alert → If not acknowledged in 24h, escalates to admin → Work order repeats daily until marked "resolved" with proof. Nothing falls through cracks.</p>
+                </div>
+                <div className="control-detail">
+                  <strong>Outcome</strong>
+                  <p>Issues caught early. Accountability clear. Downtime prevented. Maintenance becomes predictable instead of chaotic. Vehicles stay on road.</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="control-card">
+              <span className="control-num">02</span>
+              <h3>Compliance expiry prevention</h3>
+              <p>One expired license stops a vehicle instantly. SIPHYY sends scheduled reminders (30/14/7/3/1 days) that repeat until proof is uploaded, with automatic escalation if nobody acts.</p>
+
+              <button
+                className="control-learn-more"
+                onClick={() => toggleCard(2)}
+                aria-expanded={expandedCard === 2}
+              >
+                {expandedCard === 2 ? 'Show less' : 'Learn more'}
+                <svg className={`chevron ${expandedCard === 2 ? 'rotated' : ''}`} width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M4 6L8 10L12 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </button>
+
+              <div className={`control-expanded ${expandedCard === 2 ? 'open' : ''}`}>
+                <div className="control-detail">
+                  <strong>The Problem</strong>
+                  <p>Managers track insurance, licenses, permits, and inspections manually. A license expires tomorrow. Nobody remembers until police stop the vehicle. Fines, bribes, impoundment, and reputation damage follow.</p>
+                </div>
+                <div className="control-detail">
+                  <strong>The Leak</strong>
+                  <p>Fines, towing, storage fees. Lost delivery contracts when customers see you're non-compliant. Repeated "urgent" renewals cost more than planned ones. Team morale drops when drivers feel setup to fail.</p>
+                </div>
+                <div className="control-detail">
+                  <strong>How SIPHYY Stops It</strong>
+                  <p>Enter compliance dates once → System sends reminders at 30, 14, 7, 3, 1 days before expiry → Notifications repeat daily until proof of renewal is uploaded → If ignored, escalates to senior management → Dashboard shows at-risk vehicles instantly.</p>
+                </div>
+                <div className="control-detail">
+                  <strong>Outcome</strong>
+                  <p>Zero surprises. Renewals happen on time. No fines, no impoundment, no arguments with police. Compliance becomes routine, not crisis.</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="control-card">
+              <span className="control-num">03</span>
+              <h3>Parts & warranty traceability</h3>
+              <p>Without records, you pay twice for the same part. SIPHYY tracks every repair with receipts and photos, alerts you when replacements happen "too soon," and reminds you of warranty windows.</p>
+
+              <button
+                className="control-learn-more"
+                onClick={() => toggleCard(3)}
+                aria-expanded={expandedCard === 3}
+              >
+                {expandedCard === 3 ? 'Show less' : 'Learn more'}
+                <svg className={`chevron ${expandedCard === 3 ? 'rotated' : ''}`} width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M4 6L8 10L12 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </button>
+
+              <div className={`control-expanded ${expandedCard === 3 ? 'open' : ''}`}>
+                <div className="control-detail">
+                  <strong>The Problem</strong>
+                  <p>Mechanic says "We replaced that alternator 2 months ago." You have no record. Mechanic says "The part has a 12-month warranty." You have no receipt. You pay again. Vendor makes the same repair "free" by overcharging elsewhere.</p>
+                </div>
+                <div className="control-detail">
+                  <strong>The Leak</strong>
+                  <p>Duplicate repairs. Warranty work paid out of pocket. Fraudulent vendor charges. Poor part quality goes unnoticed because you can't prove replacement frequency. Same issue keeps recurring.</p>
+                </div>
+                <div className="control-detail">
+                  <strong>How SIPHYY Stops It</strong>
+                  <p>Every work order requires: part name, vendor, cost, receipt photo → System tracks installation date → If same part replaced within 6 months, flags it for review → Warranty expiry reminders sent automatically → Reports show: which parts fail most, which vendors deliver quality, cost trends.</p>
+                </div>
+                <div className="control-detail">
+                  <strong>Outcome</strong>
+                  <p>No more "mystery" repairs. Warranties actually used. Bad vendors identified early. Maintenance becomes data, not drama. You know which vehicles are money pits.</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="control-card">
+              <span className="control-num">04</span>
+              <h3>Reconciliation & unit economics</h3>
+              <p>Costs arrive from many directions. SIPHYY ties every expense to vehicle/vendor/category, flags duplicates instantly, and shows unit economics so you know which vehicles are profitable.</p>
+
+              <button
+                className="control-learn-more"
+                onClick={() => toggleCard(4)}
+                aria-expanded={expandedCard === 4}
+              >
+                {expandedCard === 4 ? 'Show less' : 'Learn more'}
+                <svg className={`chevron ${expandedCard === 4 ? 'rotated' : ''}`} width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M4 6L8 10L12 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </button>
+
+              <div className={`control-expanded ${expandedCard === 4 ? 'open' : ''}`}>
+                <div className="control-detail">
+                  <strong>The Problem</strong>
+                  <p>Fuel, repairs, tolls, fines, insurance arrive as receipts, invoices, WhatsApp screenshots. Accountant enters them in Excel. Same expense submitted twice. Vendor charges Vehicle A for work done on Vehicle B. No one notices until month-end when it's too late to dispute.</p>
+                </div>
+                <div className="control-detail">
+                  <strong>The Leak</strong>
+                  <p>Duplicate payments. Costs assigned to wrong vehicles. Budget overruns with no explanation. You think you're profitable, but cash keeps disappearing. No visibility into cost-per-km or vehicle profitability.</p>
+                </div>
+                <div className="control-detail">
+                  <strong>How SIPHYY Stops It</strong>
+                  <p>Every expense enters system with: vehicle, vendor, category, receipt → Duplicate detection alerts instantly → Dashboard shows real-time cost vs. revenue per vehicle → Reports track: cost-per-km, vendor spending patterns, category trends → Month-end reconciliation takes hours, not days.</p>
+                </div>
+                <div className="control-detail">
+                  <strong>Outcome</strong>
+                  <p>Clean books. No duplicates. Every cost traceable. You know which vehicles make money, which lose money, and why. Budgets based on data, not guesses.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
