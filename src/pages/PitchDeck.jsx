@@ -311,7 +311,7 @@ const PitchDeck = () => {
       content: [
         `"Inefficient fleets don't just leak profit, they leak emissions."`,
         `This slide connects operational efficiency to environmental impact—a growing priority for enterprise customers and investors alike. When fleets run better, they consume less fuel and produce fewer emissions.`,
-        `The ESG angle isn't greenwashing—it's a natural consequence of the core product. Better fleet management = less waste = lower carbon footprint. This positions Siphyy favorably for companies with sustainability mandates.`
+        `The ESG angle isn't greenwashing—it's a natural consequence of the core product. Better Fleet Control OS = less waste = lower carbon footprint. This positions Siphyy favorably for companies with sustainability mandates.`
       ],
       takeaway: `If your product has genuine ESG benefits, highlight them. Many enterprise customers now have sustainability requirements in their procurement processes.`
     },
@@ -427,7 +427,7 @@ const PitchDeck = () => {
       <SEO
         title="Siphyy Pitch Deck (Detailed Slide Breakdown) - Fleet Operations Platform"
         description="Explore Siphyy's investor pitch deck with detailed analysis of each slide. Learn how this fleet operations startup is bringing observability and accountability to African logistics."
-        keywords="pitch deck, investor deck, Siphyy, fleet management, FMCG, Africa, startup, logistics, pitch deck analysis"
+        keywords="pitch deck, investor deck, Siphyy, Fleet Control OS, FMCG, Africa, startup, logistics, pitch deck analysis"
         canonical="/pitch-deck"
       />
 

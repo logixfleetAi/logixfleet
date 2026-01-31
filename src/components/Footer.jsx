@@ -49,7 +49,7 @@ const Footer = () => {
           <div className="footer-column">
             <div className="footer-title">Products</div>
             <ul className="footer-links">
-              <li><Link to="/fleet-solution">Fleet Management</Link></li>
+              <li><Link to="/fleet-solution">Fleet Control OS</Link></li>
               <li><Link to="/delivery-solution">Delivery Management</Link></li>
               <li><Link to="/#pricing">Get a Quote</Link></li>
               <li><Link to="/integration">Integrations</Link></li>

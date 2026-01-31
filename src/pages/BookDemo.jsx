@@ -283,7 +283,7 @@ const BookDemo = () => {
       <SEO
         title="Book a Demo"
         description="Schedule a personalized demo of LogixFleet. See how our fleet and delivery management software can transform your logistics operations."
-        keywords="book demo, fleet management demo, delivery software demo, LogixFleet demo, free demo"
+        keywords="book demo, Fleet Control OS demo, delivery software demo, LogixFleet demo, free demo"
         canonical="/book-a-demo"
       />
       <main className="main-container">

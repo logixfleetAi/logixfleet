@@ -15,8 +15,8 @@ const Home = () => {
     <main>
       <SEO
         title="Fleet & Delivery Management Software for Africa"
-        description="Complete fleet management and delivery software for African businesses. Track vehicles, optimize routes, manage compliance, and reconcile payments. Built for East Africa."
-        keywords="fleet management, delivery management, route optimization, vehicle tracking, GPS tracking, fleet software, logistics software, Kenya, East Africa, Nairobi"
+        description="Complete Fleet Control OS and delivery software for African businesses. Track vehicles, optimize routes, manage compliance, and reconcile payments. Built for East Africa."
+        keywords="Fleet Control OS, delivery management, route optimization, vehicle tracking, GPS tracking, fleet software, logistics software, Kenya, East Africa, Nairobi"
         canonical="/"
       />
       {/* HERO */}
@@ -205,11 +205,11 @@ It helps fleet and logistics operators prevent avoidable downtime, stop cost lea
           </div>
 
           <div className="products-showcase">
-            {/* Fleet Management */}
+            {/* Fleet Control OS */}
             <div className="product-row">
               <div className="product-info">
                 <span className="product-tag">Compliance &amp; Control</span>
-                <h3 className="product-info-title">Fleet Management</h3>
+                <h3 className="product-info-title">Fleet Control OS</h3>
                 <p className="product-info-description">
                   Stay audit-ready with automated compliance tracking, approve every expense before it happens
                   with WhatsApp workflows, and catch fuel theft with AI monitoring. Complete fleet oversight
@@ -220,7 +220,7 @@ It helps fleet and logistics operators prevent avoidable downtime, stop cost lea
               <div className="product-image-wrapper product-image-lg">
                 <img
                   src="https://static.wixstatic.com/media/aa113a_39b1f3d92dff4204beb4c5bfaa3981ef~mv2.png"
-                  alt="Fleet Management Dashboard"
+                  alt="Fleet Control OS Dashboard"
                 />
               </div>
             </div>
@@ -297,7 +297,7 @@ It helps fleet and logistics operators prevent avoidable downtime, stop cost lea
 
             <div className="pricing-products-grid">
               <div className="pricing-product-card">
-                <h4>Fleet Management</h4>
+                <h4>Fleet Control OS</h4>
                 <p className="pricing-product-subtitle">For vehicle compliance and cost control</p>
                 <ul>
                   <li>Compliance tracking</li>

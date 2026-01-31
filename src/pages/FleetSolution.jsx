@@ -7,16 +7,16 @@ const FleetSolution = () => {
   return (
     <main>
       <SEO
-        title="Fleet Management Software"
-        description="Professional fleet management software with compliance tracking, AI fuel monitoring, approval workflows, and WhatsApp integration. Stay audit-ready and control costs."
-        keywords="fleet management software, compliance tracking, fuel monitoring, vehicle maintenance, approval workflows, WhatsApp fleet management, Kenya fleet software"
+        title="Fleet Control OS Software"
+        description="Professional Fleet Control OS software with compliance tracking, AI fuel monitoring, approval workflows, and WhatsApp integration. Stay audit-ready and control costs."
+        keywords="Fleet Control OS software, compliance tracking, fuel monitoring, vehicle maintenance, approval workflows, WhatsApp Fleet Control OS, Kenya fleet software"
         canonical="/fleet-solution"
       />
       {/* Hero */}
       <section className="fleet-hero">
         <div className="hero-inner">
           <span className="hero-badge">Compliance &amp; Control</span>
-          <h1 className="hero-title">Fleet Management Built for Compliance</h1>
+          <h1 className="hero-title">Fleet Control OS Built for Compliance</h1>
           <p className="hero-subtitle">
             Stay audit-ready with automated compliance tracking, control every expense with approval workflows,
             and catch fuel theft with AI monitoring. Complete fleet oversight in one platform.
@@ -33,7 +33,7 @@ const FleetSolution = () => {
         <div className="container">
           <div className="section-header">
             <div className="section-label">Core Capabilities</div>
-            <h2 className="section-title">Everything you need for professional fleet management</h2>
+            <h2 className="section-title">Everything you need for professional Fleet Control OS</h2>
             <p className="section-subtitle">
               From compliance to cost control, WhatsApp integration to AI monitoring
             </p>
@@ -125,7 +125,7 @@ const FleetSolution = () => {
                 <span role="img" aria-label="WhatsApp">💬</span>
               </div>
               <h3>WhatsApp Integration</h3>
-              <p>Fleet management where your team already works. No new apps to learn.</p>
+              <p>Fleet Control OS where your team already works. No new apps to learn.</p>
               <ul className="feature-list">
                 <li>Driver check-ins via WhatsApp</li>
                 <li>Issue reporting with photos</li>

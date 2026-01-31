@@ -65,7 +65,7 @@ const Navbar = () => {
             <div className="nav-link nav-dropdown-trigger">Products</div>
             <div className="nav-dropdown-menu">
               <Link to="/fleet-solution" className="nav-dropdown-item">
-                Fleet Management
+                Fleet Control OS
                 <span>Compliance, AI monitoring, approvals</span>
               </Link>
               <Link to="/delivery-solution" className="nav-dropdown-item">
