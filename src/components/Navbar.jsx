@@ -77,7 +77,7 @@ const Navbar = () => {
           <div className="nav-dropdown">
             <div className="nav-link nav-dropdown-trigger">Case Studies</div>
             <div className="nav-dropdown-menu">
-              <Link to="/use-cases" className="nav-dropdown-item">
+              <Link to="/use-cases/rj-logistics" className="nav-dropdown-item">
                 RJ Logistics
                 <span>12.5% fleet uptime improvement</span>
               </Link>

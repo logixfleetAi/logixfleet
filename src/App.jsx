@@ -87,7 +87,7 @@ function App() {
         <Route path="/fleet-solution" element={<FleetSolution />} />
         <Route path="/integration" element={<Integration />} />
         <Route path="/pitch-deck" element={<PitchDeck />} />
-        <Route path="/use-cases" element={<UseCases />} />
+        <Route path="/use-cases/rj-logistics" element={<UseCases />} />
       </Routes>
       <Footer />
     </>

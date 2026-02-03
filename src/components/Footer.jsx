@@ -51,7 +51,7 @@ const Footer = () => {
             <ul className="footer-links">
               <li><Link to="/fleet-solution">Fleet Control OS</Link></li>
               <li><Link to="/delivery-solution">Delivery Management</Link></li>
-              <li><Link to="/use-cases">Case Studies</Link></li>
+              <li><Link to="/use-cases/rj-logistics">Case Studies</Link></li>
               <li><Link to="/#pricing">Get a Quote</Link></li>
               <li><Link to="/integration">Integrations</Link></li>
             </ul>

@@ -9,7 +9,7 @@ const UseCases = () => {
         title="Case Study: RJ Logistics 12.5% Fleet Uptime Improvement"
         description="How RJ Logistics achieved 12.5% fleet uptime improvement in 60 days by moving from WhatsApp + paper operations to SIPHYY's end-to-end fleet operating system."
         keywords="case study, fleet operations, fleet uptime, RJ Logistics, SIPHYY case study, fleet management success story"
-        canonical="/use-cases"
+        canonical="/use-cases/rj-logistics"
       />
 
       {/* Hero Section */}
@@ -186,26 +186,6 @@ const UseCases = () => {
             </div>
           </div>
 
-          <div className="exhibits-section">
-            <h3 className="exhibits-title">Evidence artifacts</h3>
-            <div className="exhibits-grid">
-              <div className="exhibit-card">
-                <div className="exhibit-label">Exhibit A</div>
-                <div className="exhibit-name">WhatsApp issue thread</div>
-                <div className="exhibit-note">(Redacted)</div>
-              </div>
-              <div className="exhibit-card">
-                <div className="exhibit-label">Exhibit B</div>
-                <div className="exhibit-name">Paper inspection log</div>
-                <div className="exhibit-note">(Redacted)</div>
-              </div>
-              <div className="exhibit-card">
-                <div className="exhibit-label">Exhibit C</div>
-                <div className="exhibit-name">SIPHYY vehicle timeline</div>
-                <div className="exhibit-note">(Redacted)</div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 

@@ -306,7 +306,7 @@ It helps fleet and logistics operators prevent avoidable downtime, stop cost lea
             </p>
 
             <div className="case-featured-action">
-              <Link to="/use-cases" className="btn btn-primary btn-large">
+              <Link to="/use-cases/rj-logistics" className="btn btn-primary btn-large">
                 Read the full story
               </Link>
               <p className="case-featured-subtext">5 min read • Real numbers • Zero fluff</p>
