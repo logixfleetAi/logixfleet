@@ -74,6 +74,15 @@ const Navbar = () => {
               </Link>
             </div>
           </div>
+          <div className="nav-dropdown">
+            <div className="nav-link nav-dropdown-trigger">Case Studies</div>
+            <div className="nav-dropdown-menu">
+              <Link to="/use-cases" className="nav-dropdown-item">
+                RJ Logistics
+                <span>12.5% fleet uptime improvement</span>
+              </Link>
+            </div>
+          </div>
           <Link to="/#pricing" className="nav-link">Get a Quote</Link>
           <Link to="/#contact" className="nav-link">Contact</Link>
           <Link to="/integration" className="nav-link">Integration</Link>

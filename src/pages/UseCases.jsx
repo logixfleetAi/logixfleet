@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import CTASection from '../components/CTASection';
 import SEO from '../components/SEO';
 import './UseCases.css';
 
@@ -101,44 +100,35 @@ const UseCases = () => {
 
           <div className="problem-grid">
             <div className="problem-card">
-              <div className="problem-icon">💬</div>
-              <h3>Issue reporting</h3>
+              <h3>No single source of truth</h3>
               <p>
-                Drivers reported problems via calls/WhatsApp. Vehicle history scattered across chats and paper.
-                No single source of truth.
+                Repeat faults return as "new" problems because there's no searchable vehicle history.
               </p>
             </div>
             <div className="problem-card">
-              <div className="problem-icon">🔧</div>
-              <h3>Maintenance</h3>
+              <h3>Receipts not tied to vehicles</h3>
               <p>
-                Repairs treated as one-off events. Without searchable vehicle history, preventive
-                maintenance was impossible to execute consistently.
+                Leaks hide inside month-end reconciliation. Duplicates hard to spot early.
               </p>
             </div>
             <div className="problem-card">
-              <div className="problem-icon">📋</div>
-              <h3>Compliance</h3>
+              <h3>Manual renewals</h3>
               <p>
-                Renewals depended on manual reminders. When responsibilities are implicit,
-                expiry risk increases as the fleet grows.
+                Compliance becomes a surprise event. Expiry risk increases as the fleet grows.
               </p>
             </div>
             <div className="problem-card">
-              <div className="problem-icon">💰</div>
-              <h3>Spend control</h3>
+              <h3>No preventive maintenance</h3>
               <p>
-                Approvals and receipts not tied to vehicles. Reconciliation was slow.
-                Duplicates hard to spot early.
+                Repairs treated as one-off events. Without history, prevention is impossible.
               </p>
             </div>
           </div>
 
           <div className="insight-box">
-            <div className="insight-icon">💡</div>
             <div className="insight-content">
               <strong>The operator reality</strong>
-              <p>You can run a fleet like this for a while — until growth exposes the cracks. What breaks first is not effort. It's traceability.</p>
+              <p>What breaks first isn't effort. It's traceability.</p>
             </div>
           </div>
         </div>
@@ -154,6 +144,9 @@ const UseCases = () => {
               <p className="lead-paragraph">
                 SIPHYY was introduced in installments to avoid disrupting daily operations.
                 Each installment added one control point that made the next installment easier to adopt.
+              </p>
+              <p className="why-order">
+                We started with vehicle-level traceability because it becomes the foundation for compliance control and preventive maintenance.
               </p>
             </div>
           </div>
@@ -189,6 +182,27 @@ const UseCases = () => {
                   Issue → review → approval → work done → evidence → closure. Creates vehicle history
                   that enables preventive maintenance.
                 </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="exhibits-section">
+            <h3 className="exhibits-title">Evidence artifacts</h3>
+            <div className="exhibits-grid">
+              <div className="exhibit-card">
+                <div className="exhibit-label">Exhibit A</div>
+                <div className="exhibit-name">WhatsApp issue thread</div>
+                <div className="exhibit-note">(Redacted)</div>
+              </div>
+              <div className="exhibit-card">
+                <div className="exhibit-label">Exhibit B</div>
+                <div className="exhibit-name">Paper inspection log</div>
+                <div className="exhibit-note">(Redacted)</div>
+              </div>
+              <div className="exhibit-card">
+                <div className="exhibit-label">Exhibit C</div>
+                <div className="exhibit-name">SIPHYY vehicle timeline</div>
+                <div className="exhibit-note">(Redacted)</div>
               </div>
             </div>
           </div>
@@ -272,15 +286,27 @@ const UseCases = () => {
         <div className="container-narrow">
           <div className="content-block">
             <div className="section-number">04</div>
-            <h2 className="section-heading">The outcomes</h2>
-            <p className="section-subtitle">Measured results after 60 days on SIPHYY</p>
+            <h2 className="section-heading">Results after 60 days</h2>
+            <p className="section-subtitle">Measured results on SIPHYY</p>
           </div>
 
           <div className="results-hero">
             <div className="results-main">
               <div className="results-big-number">12.5%</div>
               <div className="results-big-label">Fleet uptime improvement</div>
+              <div className="results-footnote">
+                Uptime = vehicles available for trips (not grounded by breakdowns, maintenance holds, or compliance blocks).
+              </div>
             </div>
+          </div>
+
+          <div className="what-we-didnt-do">
+            <h3>What we didn't do</h3>
+            <ul>
+              <li>We didn't buy new vehicles</li>
+              <li>We didn't hire additional fleet admin</li>
+              <li>We didn't pause daily operations</li>
+            </ul>
           </div>
 
           <div className="results-grid">
@@ -312,7 +338,19 @@ const UseCases = () => {
         </div>
       </section>
 
-      <CTASection />
+      {/* Strong CTA Section */}
+      <section className="section case-study-cta">
+        <div className="container-narrow">
+          <div className="cta-box">
+            <h2>Ready to get the same results?</h2>
+            <p>See how SIPHYY can transform your fleet operations in 60 days.</p>
+            <div className="cta-buttons">
+              <Link to="/book-a-demo" className="btn btn-primary btn-large">Book a Demo</Link>
+              <Link to="/fleet-solution" className="btn btn-secondary">Learn more about Fleet Control OS</Link>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 };

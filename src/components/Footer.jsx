@@ -86,11 +86,9 @@ const Footer = () => {
             <div className="footer-title">Trusted By</div>
             <div className="footer-trusted-item">
               <span className="trusted-name">Torque Logistics</span>
-              <span className="trusted-badge">Active</span>
             </div>
             <div className="footer-trusted-item">
               <span className="trusted-name">RJ Logistics</span>
-              <span className="trusted-badge">Active</span>
             </div>
           </div>
         </div>
