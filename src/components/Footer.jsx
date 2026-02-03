@@ -51,6 +51,7 @@ const Footer = () => {
             <ul className="footer-links">
               <li><Link to="/fleet-solution">Fleet Control OS</Link></li>
               <li><Link to="/delivery-solution">Delivery Management</Link></li>
+              <li><Link to="/use-cases">Case Studies</Link></li>
               <li><Link to="/#pricing">Get a Quote</Link></li>
               <li><Link to="/integration">Integrations</Link></li>
             </ul>
@@ -77,6 +78,19 @@ const Footer = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
               <span>Nairobi, Kenya</span>
+            </div>
+          </div>
+
+          {/* Trusted By Column */}
+          <div className="footer-column">
+            <div className="footer-title">Trusted By</div>
+            <div className="footer-trusted-item">
+              <span className="trusted-name">Torque Logistics</span>
+              <span className="trusted-badge">Active</span>
+            </div>
+            <div className="footer-trusted-item">
+              <span className="trusted-name">RJ Logistics</span>
+              <span className="trusted-badge">Active</span>
             </div>
           </div>
         </div>

@@ -8,6 +8,7 @@ import DeliverySolution from './pages/DeliverySolution';
 import FleetSolution from './pages/FleetSolution';
 import Integration from './pages/Integration';
 import PitchDeck from './pages/PitchDeck';
+import UseCases from './pages/UseCases';
 import './styles/global.css';
 
 // Scroll to section or top on route/hash change
@@ -86,6 +87,7 @@ function App() {
         <Route path="/fleet-solution" element={<FleetSolution />} />
         <Route path="/integration" element={<Integration />} />
         <Route path="/pitch-deck" element={<PitchDeck />} />
+        <Route path="/use-cases" element={<UseCases />} />
       </Routes>
       <Footer />
     </>

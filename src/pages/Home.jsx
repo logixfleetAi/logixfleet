@@ -266,6 +266,55 @@ It helps fleet and logistics operators prevent avoidable downtime, stop cost lea
         </div>
       </section>
 
+      {/* CASE STUDY SECTION */}
+      <section className="section case-study-section">
+        <div className="container">
+          <div className="section-header centered">
+            <div className="section-label">Proven Results</div>
+            <h2 className="section-title">Real fleets, real improvements</h2>
+            <p className="section-subtitle">
+              See how operators like you moved from WhatsApp chaos to complete control
+            </p>
+          </div>
+
+          <div className="case-study-featured">
+            <div className="case-featured-badge">Case Study</div>
+
+            <h3 className="case-featured-title">
+              How RJ Logistics achieved<br />
+              <span className="highlight">12.5% fleet uptime improvement in 60 days</span>
+            </h3>
+
+            <div className="case-featured-stats">
+              <div className="featured-stat">
+                <div className="featured-stat-value">12.5%</div>
+                <div className="featured-stat-label">Fleet uptime boost</div>
+              </div>
+              <div className="featured-stat">
+                <div className="featured-stat-value">26+</div>
+                <div className="featured-stat-label">Vehicles managed</div>
+              </div>
+              <div className="featured-stat">
+                <div className="featured-stat-value">60 days</div>
+                <div className="featured-stat-label">Time to results</div>
+              </div>
+            </div>
+
+            <p className="case-featured-description">
+              RJ Logistics moved from WhatsApp threads and paper trails to complete operational visibility.
+              Same team managing more vehicles with zero chaos.
+            </p>
+
+            <div className="case-featured-action">
+              <Link to="/use-cases" className="btn btn-primary btn-large">
+                Read the full story
+              </Link>
+              <p className="case-featured-subtext">5 min read • Real numbers • Zero fluff</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* PRICING SECTION */}
       <section className="section section-alt" id="pricing">
         <div className="container">
